@@ -105,13 +105,25 @@
           }
         });
       },
-      { threshold: 0.12, rootMargin: '0px 0px -60px 0px' }
+      { threshold: 0.05, rootMargin: '0px 0px 0px 0px' }
     );
     revealEls.forEach(el => observer.observe(el));
+
+    // Immediately reveal anything already in the viewport on load
+    setTimeout(() => {
+      revealEls.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          el.classList.add('visible');
+          observer.unobserve(el);
+        }
+      });
+    }, 50);
   } else {
     // Fallback: show everything
     revealEls.forEach(el => el.classList.add('visible'));
   }
+
 
   // ─── Hero Canvas — subtle floating particles ─────────────────
   const canvas = $('#hero-canvas');

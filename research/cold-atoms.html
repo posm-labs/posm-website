@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Integrated Quantum RF Hardware — POSM Research</title>
+  <meta name="description"
+    content="POSM research in RF and microwave hardware for quantum experiments, including frequency-control electronics, high-speed drivers, and mixed-signal PCBs." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body>
+
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="../index.html" class="nav-logo" aria-label="POSM home">
+        <div class="nav-logo-mark" aria-hidden="true">P</div>POSM
+      </a>
+      <ul class="nav-links" role="list">
+        <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="../team.html" class="nav-link">Team</a></li>
+        <li class="nav-item"><a href="../research.html" class="nav-link" data-active="true">Research</a></li>
+        <li class="nav-item">
+          <span class="nav-link" tabindex="0" role="button" aria-haspopup="true">News<svg viewBox="0 0 16 16"
+              fill="none" aria-hidden="true">
+              <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></span>
+          <div class="nav-dropdown" role="menu"><a href="../news-updates.html" role="menuitem">Project Updates</a><a
+              href="../news-publications.html" role="menuitem">Publications</a></div>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link" tabindex="0" role="button" aria-haspopup="true">Sponsors<svg viewBox="0 0 16 16"
+              fill="none" aria-hidden="true">
+              <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></span>
+          <div class="nav-dropdown" role="menu"><a href="../sponsors-current.html" role="menuitem">Current
+              Sponsors</a><a href="../sponsors-join.html" role="menuitem">For Potential Sponsors</a></div>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link" tabindex="0" role="button" aria-haspopup="true">Capabilities<svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div class="nav-dropdown" role="menu"><a href="../capabilities/hardware.html" role="menuitem">Hardware</a><a href="../capabilities/posmq.html" role="menuitem">POSMq</a></div>
+        </li>
+        <li class="nav-item"><a href="../contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="../sponsors-join.html" class="btn btn-primary btn-sm">Support POSM</a>
+        <button class="nav-hamburger" id="hamburger" aria-label="Toggle mobile menu"
+          aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <a href="../index.html" class="mobile-menu-link">Home</a>
+    <a href="../team.html" class="mobile-menu-link">Team</a>
+    <a href="../research.html" class="mobile-menu-link" style="color:var(--white)">Research</a>
+    <div class="mobile-menu-link" style="color:var(--white)">News</div>
+    <a href="../news-updates.html" class="mobile-menu-sub">↳ Project Updates</a>
+    <a href="../news-publications.html" class="mobile-menu-sub">↳ Publications</a>
+    <div class="mobile-menu-divider"></div>
+    <div class="mobile-menu-link" style="color:var(--white)">Sponsors</div>
+    <a href="../sponsors-current.html" class="mobile-menu-sub">↳ Current Sponsors</a>
+    <a href="../sponsors-join.html" class="mobile-menu-sub">↳ For Potential Sponsors</a>
+    <div class="mobile-menu-divider"></div>
+    <div class="mobile-menu-link" style="color:var(--white)">Capabilities</div><a href="../capabilities/hardware.html" class="mobile-menu-sub">↳ Hardware</a><a href="../capabilities/posmq.html" class="mobile-menu-sub">↳ POSMq</a>
+    <div class="mobile-menu-divider"></div>
+    <a href="../contact.html" class="mobile-menu-link">Contact</a>
+    <div style="margin-top:1.5rem"><a href="../sponsors-join.html" class="btn btn-primary w-full"
+        style="justify-content:center">Support POSM</a></div>
+  </div>
+
+  <main id="main-content">
+
+    <div class="container" style="padding-top:calc(var(--nav-h) + 0.25rem)">
+      <a href="../research.html" class="btn btn-ghost btn-sm" style="margin-bottom:var(--space-lg)">&larr; Back to
+        Research</a>
+    </div>
+
+    <section style="padding-block:0 var(--space-3xl)" aria-labelledby="research-area-title">
+      <div class="container">
+        <div class="research-page-layout">
+
+          <!-- LEFT SIDEBAR — auto-populated by research-data.js -->
+          <aside class="research-sidebar">
+            <nav id="research-sidebar-nav" data-current-slug="cold-atoms" aria-label="Research areas navigation"></nav>
+          </aside>
+
+          <!-- MAIN CONTENT -->
+          <div class="research-page-content">
+            <h1 class="display-lg mb-md" id="research-area-title">Integrated Quantum RF Hardware</h1>
+
+            <!-- ✏️ EDIT: Replace this placeholder paragraph with real content -->
+            <p class="body-lg text-muted">
+              Radio-frequency and microwave systems are critical tools for controlling optical, atomic, and quantum
+              experiments. They enable laser stabilization, electro-optic modulation, optical frequency shifting,
+              microwave-field generation, and precise timing across complex experimental platforms. As these experiments
+              become more complex, custom RF hardware is often needed to achieve the stability, bandwidth, timing, and
+              compactness that off-the-shelf systems cannot provide. In this research area, POSM develops RF and
+              microwave hardware for quantum experiments, including frequency-control electronics, high-speed drivers,
+              mixed-signal PCBs, and early-stage integrated circuit concepts for future sensing and control platforms.
+            </p>
+
+            <!-- ✏️ EDIT: Replace image src below -->
+            <div class="research-page-image">
+              <img src="../assets/images/research/RF.jpg"
+                alt="Integrated quantum RF hardware" loading="lazy"
+                onerror="this.parentElement.style.background='linear-gradient(135deg,#0a1a2e,#0d1020)';this.parentElement.style.aspectRatio='16/9';this.style.display='none'" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="../index.html" class="nav-logo" style="display:inline-flex">
+            <div class="nav-logo-mark" aria-hidden="true">P</div>POSM
+          </a>
+          <p>Student-led quantum optics and AMO hardware research &middot; University of Minnesota.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Group</h4><a href="../team.html">Team</a><a href="../research.html">Research</a><a
+            href="../capabilities/hardware.html">Hardware</a><a href="../capabilities/posmq.html">POSMq</a><a href="../contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>News</h4><a href="../news-updates.html">Project Updates</a><a
+            href="../news-publications.html">Publications</a>
+        </div>
+        <div class="footer-col">
+          <h4>Sponsors</h4><a href="../sponsors-current.html">Current Sponsors</a><a href="../sponsors-join.html">Become
+            a Sponsor</a>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>&copy; 2025&ndash;2026 POSM Research Group &middot; University of
+          Minnesota</span><span>Advised by Prof. Alexander McLeod</span></div>
+    </div>
+  </footer>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/research-data.js"></script>
+</body>
+
+</html>

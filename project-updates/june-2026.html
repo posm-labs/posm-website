@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>June 2026 Update — POSM Quantum Optics Research Group</title>
+  <meta name="description"
+    content="June 2026 project update: first spectroscopy lock, vacuum hardware milestones, and student project assignments at POSM." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body>
+
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="../index.html" class="nav-logo" aria-label="POSM home">
+        <div class="nav-logo-mark" aria-hidden="true">P</div>POSM
+      </a>
+      <ul class="nav-links" role="list">
+        <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="../team.html" class="nav-link">Team</a></li>
+        <li class="nav-item"><a href="../research.html" class="nav-link">Research</a></li>
+        <li class="nav-item">
+          <span class="nav-link" tabindex="0" role="button" aria-haspopup="true" data-active="true">News<svg
+              viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></span>
+          <div class="nav-dropdown" role="menu"><a href="../news-updates.html" role="menuitem"
+              style="color:var(--white)">Project Updates</a><a href="../news-publications.html"
+              role="menuitem">Publications</a></div>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link" tabindex="0" role="button" aria-haspopup="true">Sponsors<svg viewBox="0 0 16 16"
+              fill="none" aria-hidden="true">
+              <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></span>
+          <div class="nav-dropdown" role="menu"><a href="../sponsors-current.html" role="menuitem">Current
+              Sponsors</a><a href="../sponsors-join.html" role="menuitem">For Potential Sponsors</a></div>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link" tabindex="0" role="button" aria-haspopup="true">Capabilities<svg viewBox="0 0 16 16"
+              fill="none" aria-hidden="true">
+              <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></span>
+          <div class="nav-dropdown" role="menu"><a href="../capabilities/hardware.html" role="menuitem">Hardware</a><a
+              href="../capabilities/posmq.html" role="menuitem">POSMq</a></div>
+        </li>
+        <li class="nav-item"><a href="../contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="../sponsors-join.html" class="btn btn-primary btn-sm">Support POSM</a>
+        <button class="nav-hamburger" id="hamburger" aria-label="Toggle mobile menu"
+          aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <a href="../index.html" class="mobile-menu-link">Home</a><a href="../team.html" class="mobile-menu-link">Team</a><a
+      href="../research.html" class="mobile-menu-link">Research</a>
+    <div class="mobile-menu-link" style="color:var(--white)">News</div><a href="../news-updates.html"
+      class="mobile-menu-sub" style="color:var(--purple-bright)">↳ Project Updates</a><a
+      href="../news-publications.html" class="mobile-menu-sub">↳ Publications</a>
+    <div class="mobile-menu-divider"></div>
+    <div class="mobile-menu-link" style="color:var(--white)">Sponsors</div><a href="../sponsors-current.html"
+      class="mobile-menu-sub">↳ Current Sponsors</a><a href="../sponsors-join.html" class="mobile-menu-sub">↳ For
+      Potential Sponsors</a>
+    <div class="mobile-menu-divider"></div>
+    <div class="mobile-menu-link" style="color:var(--white)">Capabilities</div><a href="../capabilities/hardware.html"
+      class="mobile-menu-sub">↳ Hardware</a><a href="../capabilities/posmq.html" class="mobile-menu-sub">↳ POSMq</a>
+    <div class="mobile-menu-divider"></div><a href="../contact.html" class="mobile-menu-link">Contact</a>
+    <div style="margin-top:1.5rem"><a href="../sponsors-join.html" class="btn btn-primary w-full"
+        style="justify-content:center">Support POSM</a></div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- Post Hero -->
+    <section class="page-hero" style="padding-bottom:var(--space-md)" aria-labelledby="post-heading">
+      <div class="container page-hero-content">
+        <a href="../news-updates.html" class="btn btn-ghost btn-sm reveal" style="margin-bottom:var(--space-md)">← Back
+          to Updates</a>
+        <div class="label mb-xs reveal reveal-delay-1">JUNE 11th, 2026</div>
+        <h1 class="display-lg reveal reveal-delay-1" id="post-heading">POSM Monthly Update — June 2026</h1>
+        <div class="update-card-tags reveal reveal-delay-2" style="margin-top:var(--space-md)">
+          <span class="update-tag">RF</span>
+          <span class="update-tag">QUANTUM</span>
+          <span class="update-tag">GROUP UPDATES</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Post Content -->
+    <section class="section" style="padding-top:var(--space-md)" aria-label="Post content">
+      <div class="container">
+        <div class="post-content">
+
+          <!-- ✏️ BLOCK 1 — Paragraphs (edit text below) -->
+          <div class="post-block reveal">
+            <p class="body-lg text-muted">
+              POSM was started with a simple goal: to give students a serious place to gain engineering experience. We
+              wanted to create a community that was specifically made to give motivated undergraduates the opportunity
+              to design, build, and test the cutting-edge hardware used in a plethora of modern engineering disciplines.
+              We chose to focus on areas like radio frequency design, photonics, optomechanics, and quantum optics
+              because although they sit at the center of state-of-the-art engineering research, most undergraduates will
+              never get the chance to explore them meaningfully. This mission has shaped everything we have done so far,
+              and after months of organizing, POSM is ready to begin turning this dream into hardware.
+            </p>
+
+            <p class="body-lg text-muted">
+              We are beyond excited to share that POSM has secured approximately $6,000 in private funding to support
+              our first round of research and development work. This funding will allow us to begin purchasing the raw
+              materials, manufacturing services, and equipment needed to bring our designs to life. We are beyond
+              grateful to our donor Mehdi Hoorzad for this opportunity and would like to extend our deepest thank you to
+              him. Additionally, we are equally as happy to share that we have secured a dedicated lab space to use for
+              project development. We want to extend a sincere thank you to Professor McLeod at the University of
+              Minnesota for allowing us to use a portion of his lab.
+            </p>
+
+            <p class="body-lg text-muted">
+              POSM is now preparing to enter its first major fabrication and testing phase. Our first goal is to build a
+              fully functional modulation transfer spectroscopy lock. We chose this as our first goal for a variety of
+              different reasons. The spectroscopy lock is not only a culmination of numerous different sub-projects
+              spanning from theoretical physics work to welding, but it also represents a first step towards our main
+              goal: a fully working Magneto-Optical Trap (MOT). Our current plan is to complete both the construction
+              and the testing of the spectroscopy lock by the end of August '26. We will then be able to use the
+              finished spectroscopy lock as a starting point for the construction of the MOT. We hope to have the MOT
+              fully completed by the end of November '26. While our main focus currently remains on finishing the
+              spectroscopy lock, we are already beginning to develop ideas for novel research we hope to perform with
+              the MOT, and we are incredibly excited to share more as those plans take shape.
+            </p>
+
+            <p class="body-lg text-muted">
+              This first construction phase marks the true beginning of what POSM was created to become. The
+              spectroscopy lock and the MOT are both ambitious projects that don&rsquo;t come with blueprints, but these
+              are
+              exactly the kind of projects that give students the opportunity to grow into real engineers. We have no
+              doubt that we will make mistakes, but we also have no doubt that we can fix and overcome them. With all of
+              our preparations finally taking form, POSM is ready to take on these difficult projects with spirit. In
+              the words of JFK, &ldquo;We choose to go to the Moon in this decade and do the other things, not because
+              they
+              are easy, but because they are hard.&rdquo;
+            </p>
+
+            <p class="body-lg text-muted" style="margin-top:var(--space-md)">
+              Thank you for your continued support.<br />
+              &mdash; POSM Team
+            </p>
+          </div>
+
+          <!-- ✏️ BLOCK 2 — Image + Caption (edit src and caption below) -->
+          <figure class="post-image-block reveal">
+            <img src="../assets/images/updates/june-2026-post.png" alt="Lab setup for spectroscopy lock experiment"
+              loading="lazy" onerror="this.parentElement.classList.add('post-img-fallback')" />
+            <figcaption class="post-image-caption">Photo from POSMs First Meeting (Circa. Fall 2025).</figcaption>
+          </figure>
+
+          <!-- Back link -->
+          <div class="reveal" style="margin-top:var(--space-xl)">
+            <a href="../news-updates.html" class="btn btn-ghost btn-sm">← All Updates</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="../index.html" class="nav-logo" style="display:inline-flex">
+            <div class="nav-logo-mark" aria-hidden="true">P</div>POSM
+          </a>
+          <p>Student-led quantum optics and AMO hardware research · University of Minnesota · Advised by Prof. Alexander
+            McLeod.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Group</h4><a href="../team.html">Team</a><a href="../research.html">Research</a><a
+            href="../capabilities/hardware.html">Hardware</a><a href="../capabilities/posmq.html">POSMq</a><a
+            href="../contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>News</h4><a href="../news-updates.html">Project Updates</a><a
+            href="../news-publications.html">Publications</a>
+        </div>
+        <div class="footer-col">
+          <h4>Sponsors</h4><a href="../sponsors-current.html">Current Sponsors</a><a href="../sponsors-join.html">Become
+            a Sponsor</a>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© 2025–2026 POSM Research Group · University of Minnesota</span><span>Advised by
+          Prof. Alexander McLeod</span></div>
+    </div>
+  </footer>
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

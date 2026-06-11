@@ -27,7 +27,10 @@
           <span class="nav-link" tabindex="0" role="button" aria-haspopup="true">Sponsors<svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
           <div class="nav-dropdown" role="menu"><a href="sponsors-current.html" role="menuitem">Current Sponsors</a><a href="sponsors-join.html" role="menuitem">For Potential Sponsors</a></div>
         </li>
-        <li class="nav-item"><a href="outreach.html" class="nav-link">Outreach</a></li>
+        <li class="nav-item">
+          <span class="nav-link" tabindex="0" role="button" aria-haspopup="true">Capabilities<svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div class="nav-dropdown" role="menu"><a href="capabilities/hardware.html" role="menuitem">Hardware</a><a href="capabilities/posmq.html" role="menuitem">POSMq</a></div>
+        </li>
         <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
       </ul>
       <div class="nav-cta">
@@ -42,7 +45,8 @@
     <div class="mobile-menu-divider"></div>
     <div class="mobile-menu-link" style="color:var(--white)">Sponsors</div><a href="sponsors-current.html" class="mobile-menu-sub">↳ Current Sponsors</a><a href="sponsors-join.html" class="mobile-menu-sub">↳ For Potential Sponsors</a>
     <div class="mobile-menu-divider"></div>
-    <a href="outreach.html" class="mobile-menu-link">Outreach</a><a href="contact.html" class="mobile-menu-link">Contact</a>
+    <div class="mobile-menu-link" style="color:var(--white)">Capabilities</div><a href="capabilities/hardware.html" class="mobile-menu-sub">↳ Hardware</a><a href="capabilities/posmq.html" class="mobile-menu-sub">↳ POSMq</a>
+    <div class="mobile-menu-divider"></div><a href="contact.html" class="mobile-menu-link">Contact</a>
     <div style="margin-top:1.5rem"><a href="sponsors-join.html" class="btn btn-primary w-full" style="justify-content:center">Support POSM</a></div>
   </div>
 
@@ -61,50 +65,47 @@
     </div>
   </section>
 
-  <section class="section" aria-label="Publication list">
+  <section class="section" style="padding-top:var(--space-xl)" aria-label="Publication list">
     <div class="container">
-      <div class="pub-list" id="pub-list">
+      <div class="pub-layout">
 
-        <!-- ⚠️ ADD NEW PUBLICATIONS AT THE TOP — newest first -->
-        <!-- TEMPLATE: copy this block and fill in your pub details -->
+        <!-- LEFT: Filter Panel -->
+        <aside class="pub-filter-panel">
+          <div class="pub-filter-heading">Filters</div>
+          <div class="pub-filter-section-label">Year of Publication</div>
+          <label class="pub-filter-option">
+            <input type="checkbox" id="filter-2026" value="2026" />
+            2026
+          </label>
+        </aside>
 
-        <!-- PLACEHOLDER: In Preparation -->
-        <article class="pub-card reveal">
-          <span class="pub-status in-prep">In Preparation</span>
-          <h2 class="pub-title">[ Title of Upcoming Paper ]</h2>
-          <p class="pub-authors">[ Author 1 ], [ Author 2 ], Prof. Alexander McLeod, et al.</p>
-          <p class="body-sm text-muted">Target: [ Journal / arXiv ] · Expected [ Year ]</p>
-          <p class="pub-abstract">Placeholder — abstract will be added when the manuscript is submitted for review.</p>
-        </article>
+        <!-- RIGHT: Publication List -->
+        <div class="pub-list" id="pub-list">
 
-        <!-- PLACEHOLDER: Preprint -->
-        <article class="pub-card reveal">
-          <span class="pub-status preprint">Preprint</span>
-          <h2 class="pub-title">[ Title of Preprint Paper ]</h2>
-          <p class="pub-authors">[ Author 1 ], [ Author 2 ], Prof. Alexander McLeod</p>
-          <p class="body-sm text-muted">arXiv:XXXX.XXXXX · [ Month Year ]
-            <!-- ⚠️ Replace with actual arXiv link below -->
-            <a href="#" style="color:var(--cyan);margin-left:0.5rem;font-weight:600">arXiv ↗</a>
-          </p>
-          <p class="pub-abstract">Abstract placeholder — replace with the actual abstract text once posted to arXiv or submitted to a journal.</p>
-        </article>
+          <!-- ════════════════════════════════════════════════════════
+               ✏️  PUBLICATION TEMPLATE
+               To add a new publication:
+               1. Copy the <article> block below
+               2. Remove style="display:none" and data-published="false"
+               3. Fill in your title/authors/abstract/link
+               4. Place newest entries at the TOP of this list
+               Status classes: in-prep | preprint | published
+               ════════════════════════════════════════════════════════ -->
 
-        <!-- PLACEHOLDER: Published -->
-        <article class="pub-card reveal">
-          <span class="pub-status published">Published</span>
-          <h2 class="pub-title">[ Title of Published Paper ]</h2>
-          <p class="pub-authors">[ Author 1 ], [ Author 2 ], Prof. Alexander McLeod, et al.</p>
-          <p class="body-sm text-muted">[ Journal Name ] · Vol. X, No. Y · [ Year ]
-            <!-- ⚠️ Replace with actual DOI link -->
-            <a href="#" style="color:var(--purple-bright);margin-left:0.5rem;font-weight:600">DOI ↗</a>
-          </p>
-          <p class="pub-abstract">Abstract placeholder — replace with the actual published abstract.</p>
-        </article>
+          <!-- PLACEHOLDER: hidden — set data-published="true" and remove display:none to show -->
+          <article class="pub-card" data-published="false" data-year="2026" style="display:none">
+            <span class="pub-status in-prep">In Preparation</span>
+            <h2 class="pub-title">[ Title of Upcoming Paper ]</h2>
+            <p class="pub-authors">[ Author 1 ], [ Author 2 ], Prof. Alexander McLeod, et al.</p>
+            <p class="body-sm text-muted">Target: [ Journal / arXiv ] · Expected 2026</p>
+            <p class="pub-abstract">Placeholder — abstract will be added when the manuscript is submitted for review.</p>
+          </article>
 
-        <!-- Note to maintainers -->
-        <div class="card reveal" style="border-style:dashed;text-align:center;padding:2rem;opacity:0.5">
-          <p class="body-sm text-muted">⚠️ <strong>Maintainers:</strong> Copy any <code>&lt;article class="pub-card"&gt;</code> block above, update status/title/authors/abstract/link, and paste at the top of the list.</p>
-          <p class="body-sm text-muted" style="margin-top:0.5rem">Status options: <code>in-prep</code> · <code>preprint</code> · <code>published</code></p>
+          <!-- Empty state — shown when no publications are visible -->
+          <div class="pub-empty-state" id="pub-empty-state">
+            Publications will appear here as papers, preprints, and technical reports are released.
+          </div>
+
         </div>
 
       </div>
@@ -117,7 +118,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand"><a href="index.html" class="nav-logo" style="display:inline-flex"><div class="nav-logo-mark" aria-hidden="true">P</div>POSM</a><p>Student-led quantum optics and AMO hardware research · University of Minnesota · Advised by Prof. Alexander McLeod.</p></div>
-        <div class="footer-col"><h4>Group</h4><a href="team.html">Team</a><a href="research.html">Research</a><a href="outreach.html">Outreach</a><a href="contact.html">Contact</a></div>
+        <div class="footer-col"><h4>Group</h4><a href="team.html">Team</a><a href="research.html">Research</a><a href="capabilities/hardware.html">Hardware</a><a href="capabilities/posmq.html">POSMq</a><a href="contact.html">Contact</a></div>
         <div class="footer-col"><h4>News</h4><a href="news-updates.html">Project Updates</a><a href="news-publications.html">Publications</a></div>
         <div class="footer-col"><h4>Sponsors</h4><a href="sponsors-current.html">Current Sponsors</a><a href="sponsors-join.html">Become a Sponsor</a></div>
       </div>

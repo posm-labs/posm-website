@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hardware Capabilities — POSM Quantum Optics Research Group</title>
+  <meta name="description"
+    content="POSM builds experimental hardware for quantum, photonic, RF, and sensing systems: signal generation, frequency control, electro-optic assemblies, and automated optomechanics." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body>
+
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="../index.html" class="nav-logo" aria-label="POSM home">
+        <div class="nav-logo-mark" aria-hidden="true">P</div>POSM
+      </a>
+      <ul class="nav-links" role="list">
+        <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="../team.html" class="nav-link">Team</a></li>
+        <li class="nav-item"><a href="../research.html" class="nav-link">Research</a></li>
+        <li class="nav-item">
+          <span class="nav-link" tabindex="0" role="button" aria-haspopup="true">News<svg viewBox="0 0 16 16"
+              fill="none" aria-hidden="true">
+              <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></span>
+          <div class="nav-dropdown" role="menu"><a href="../news-updates.html" role="menuitem">Project Updates</a><a
+              href="../news-publications.html" role="menuitem">Publications</a></div>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link" tabindex="0" role="button" aria-haspopup="true">Sponsors<svg viewBox="0 0 16 16"
+              fill="none" aria-hidden="true">
+              <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></span>
+          <div class="nav-dropdown" role="menu"><a href="../sponsors-current.html" role="menuitem">Current
+              Sponsors</a><a href="../sponsors-join.html" role="menuitem">For Potential Sponsors</a></div>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link" tabindex="0" role="button" aria-haspopup="true" data-active="true">Capabilities<svg
+              viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></span>
+          <div class="nav-dropdown" role="menu"><a href="hardware.html" role="menuitem"
+              style="color:var(--white)">Hardware</a><a href="posmq.html" role="menuitem">POSMq</a></div>
+        </li>
+        <li class="nav-item"><a href="../contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="../sponsors-join.html" class="btn btn-primary btn-sm">Support POSM</a>
+        <button class="nav-hamburger" id="hamburger" aria-label="Toggle mobile menu"
+          aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <a href="../index.html" class="mobile-menu-link">Home</a><a href="../team.html" class="mobile-menu-link">Team</a><a
+      href="../research.html" class="mobile-menu-link">Research</a>
+    <div class="mobile-menu-link" style="color:var(--white)">News</div><a href="../news-updates.html"
+      class="mobile-menu-sub">↳ Project Updates</a><a href="../news-publications.html" class="mobile-menu-sub">↳
+      Publications</a>
+    <div class="mobile-menu-divider"></div>
+    <div class="mobile-menu-link" style="color:var(--white)">Sponsors</div><a href="../sponsors-current.html"
+      class="mobile-menu-sub">↳ Current Sponsors</a><a href="../sponsors-join.html" class="mobile-menu-sub">↳ For
+      Potential Sponsors</a>
+    <div class="mobile-menu-divider"></div>
+    <div class="mobile-menu-link" style="color:var(--white)">Capabilities</div><a href="hardware.html"
+      class="mobile-menu-sub" style="color:var(--purple-bright)">↳ Hardware</a><a href="posmq.html"
+      class="mobile-menu-sub">↳ POSMq</a>
+    <div class="mobile-menu-divider"></div>
+    <a href="../contact.html" class="mobile-menu-link">Contact</a>
+    <div style="margin-top:1.5rem"><a href="../sponsors-join.html" class="btn btn-primary w-full"
+        style="justify-content:center">Support POSM</a></div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════════════════════
+       SECTION 1 — HERO  (dark + radial glow + grid overlay)
+       ═══════════════════════════════════════════════════ -->
+    <section class="hw-hero" aria-labelledby="hw-page-heading">
+      <div class="hw-hero-grid" aria-hidden="true"></div>
+      <div class="hw-hero-glow" aria-hidden="true"></div>
+      <div class="container" style="position:relative;z-index:1">
+        <div class="page-hero-content">
+          <div class="section-label reveal"><span class="label">Capabilities</span></div>
+          <h1 class="display-xl reveal reveal-delay-1" id="hw-page-heading">Tools for the Experimental Stack</h1>
+          <p class="body-lg text-muted reveal reveal-delay-2" style="max-width:600px;margin-top:var(--space-md)">
+            From RF signals to optical interfaces to automated control, POSM builds the supporting systems that make
+            complex quantum and photonic experiments easier to tune, monitor, and repeat.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+       SECTION 2 — ACCENT BANNER  (full-bleed gradient strip)
+       ═══════════════════════════════════════════════════ -->
+    <div class="hw-accent-banner" aria-hidden="false">
+      <div class="container">
+        <p class="hw-banner-text reveal">Modular instrumentation · Signal routing · Frequency control · Electro-optics ·
+          Automated mechanics</p>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════
+       SECTION 3 — SIGNAL GENERATION  (centered hero card with glow border)
+       ✏️ Edit title and description below
+       ═══════════════════════════════════════════════════ -->
+    <section class="hw-sec hw-sec-signal" aria-labelledby="hw-signal-heading">
+      <div class="container">
+        <div class="hw-signal-card reveal">
+          <div class="hw-signal-card-glow" aria-hidden="true"></div>
+          <div class="hw-signal-inner">
+            <div class="hw-signal-badge">Featured Platform</div>
+            <h2 class="display-lg mb-md" id="hw-signal-heading">Signal Generation Platforms</h2>
+            <p class="body-lg text-muted" style="max-width:540px;margin-inline:auto">
+              Modular RF and mixed-signal platforms for generating, routing, filtering, and switching experiment-control
+              waveforms. Designed for multi-channel laboratory systems, these boards provide a flexible foundation for
+              laser modulation, timing control, and RF-driven experimental setups.
+            </p>
+            <div class="hw-signal-stats">
+              <div class="hw-signal-stat">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M2 12h2l3-7 4 14 3-7h2" />
+                  <circle cx="20" cy="12" r="2" />
+                </svg>
+                <span>Waveform Generation</span>
+              </div>
+              <div class="hw-signal-stat">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="3" y="3" width="7" height="7" />
+                  <rect x="14" y="3" width="7" height="7" />
+                  <rect x="3" y="14" width="7" height="7" />
+                  <rect x="14" y="14" width="7" height="7" />
+                </svg>
+                <span>POSMq-compatible</span>
+              </div>
+              <div class="hw-signal-stat">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <polygon points="22,3 2,3 10,12.46 10,19 14,21 14,12.46" />
+                </svg>
+                <span>Active Filtering up to 30 dB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+       SECTION 4 — FREQUENCY CONTROL  (dark inset panel + bright accent line)
+       ✏️ Edit title and description below
+       ═══════════════════════════════════════════════════ -->
+    <section class="hw-sec hw-sec-freq" aria-labelledby="hw-freq-heading">
+      <div class="hw-freq-bg" aria-hidden="true"></div>
+      <div class="container" style="position:relative;z-index:1">
+        <div class="hw-freq-layout">
+          <div class="hw-freq-accent" aria-hidden="true"></div>
+          <div class="hw-freq-content reveal">
+            <div class="section-label"><span class="label">Timing &amp; Control</span></div>
+            <h2 class="display-lg mb-md" id="hw-freq-heading">Frequency-Control Hardware</h2>
+            <p class="body-lg text-muted">
+              Hardware for precise optical frequency control across wide modulation bandwidths. These systems support
+              laser-frequency shifting, agile modulation, timing coordination, and clean signal conditioning for
+              experiments where stable, tunable optical control is required.
+            </p>
+          </div>
+          <div class="hw-freq-visual reveal reveal-delay-2" aria-hidden="true">
+            <div class="hw-freq-rings">
+              <div class="hw-freq-ring hw-freq-ring-1"></div>
+              <div class="hw-freq-ring hw-freq-ring-2"></div>
+              <div class="hw-freq-ring hw-freq-ring-3"></div>
+              <div class="hw-freq-core"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+       SECTION 5 — ELECTRO-OPTIC  (horizontal icon strip on gradient bg)
+       ✏️ Edit title and description below
+       ═══════════════════════════════════════════════════ -->
+    <section class="hw-sec hw-sec-eo" aria-labelledby="hw-eo-heading">
+      <div class="container">
+        <div style="text-align:center;max-width:640px;margin-inline:auto" class="reveal">
+          <div class="section-label" style="justify-content:center"><span class="label">Photonics</span></div>
+          <h2 class="display-lg mb-md" id="hw-eo-heading">Electro-Optic Assemblies</h2>
+          <p class="body-lg text-muted mb-xl">
+            Compact electro-optic hardware for integrating modulators into photonic and atomic experiments. These
+            assemblies combine modulator packaging, drive electronics, optical alignment, and optomechanical support
+            into practical modules designed for stable laboratory use.
+          </p>
+        </div>
+        <div class="hw-eo-strip reveal-stagger">
+          <div class="hw-eo-chip">
+            <div class="hw-eo-chip-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+              </svg>
+            </div>
+            <span>Modulators</span>
+          </div>
+          <div class="hw-eo-connector" aria-hidden="true"></div>
+          <div class="hw-eo-chip">
+            <div class="hw-eo-chip-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="4" y="4" width="16" height="16" rx="2" />
+                <path d="M9 9h6v6H9z" />
+                <path d="M9 1v3m6-3v3m-6 17v3m6-3v3M1 9h3m-3 6h3m17-6h3m-3 6h3" />
+              </svg>
+            </div>
+            <span>Drivers</span>
+          </div>
+          <div class="hw-eo-connector" aria-hidden="true"></div>
+          <div class="hw-eo-chip">
+            <div class="hw-eo-chip-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="5" />
+                <path
+                  d="M12 1v4m0 14v4M4.22 4.22l2.83 2.83m9.9 9.9l2.83 2.83M1 12h4m14 0h4M4.22 19.78l2.83-2.83m9.9-9.9l2.83-2.83" />
+              </svg>
+            </div>
+            <span>Optics</span>
+          </div>
+          <div class="hw-eo-connector" aria-hidden="true"></div>
+          <div class="hw-eo-chip">
+            <div class="hw-eo-chip-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path
+                  d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" />
+              </svg>
+            </div>
+            <span>Mechanical</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+       SECTION 6 — OPTOMECHANICS  (glass card on mesh gradient)
+       ✏️ Edit title and description below
+       ═══════════════════════════════════════════════════ -->
+    <section class="hw-sec hw-sec-opto" aria-labelledby="hw-opto-heading">
+      <div class="hw-opto-mesh" aria-hidden="true"></div>
+      <div class="container" style="position:relative;z-index:1">
+        <div class="hw-opto-glass reveal">
+          <div class="hw-opto-glass-inner">
+            <div class="hw-opto-left">
+              <div class="section-label"><span class="label">Mechanics</span></div>
+              <h2 class="display-lg mb-md" id="hw-opto-heading">Automated Optomechanics</h2>
+              <p class="body-lg text-muted">
+                Motorized optomechanical hardware for experiments that require repeatable optical adjustment and live
+                diagnostic feedback. POSM develops automated rotation mounts, polarization and power-control modules,
+                and optical monitoring taps that make laboratory optical systems easier to tune, measure, and return to
+                known states.
+              </p>
+            </div>
+            <div class="hw-opto-right" aria-hidden="true">
+              <div class="hw-opto-dial">
+                <div class="hw-opto-dial-ring"></div>
+                <div class="hw-opto-dial-tick hw-opto-tick-1"></div>
+                <div class="hw-opto-dial-tick hw-opto-tick-2"></div>
+                <div class="hw-opto-dial-tick hw-opto-tick-3"></div>
+                <div class="hw-opto-dial-tick hw-opto-tick-4"></div>
+                <div class="hw-opto-dial-needle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+       SECTION 7 — POSMq CALLOUT  (luminous accent band)
+       ═══════════════════════════════════════════════════ -->
+    <section class="hw-sec hw-sec-posmq-cta" aria-labelledby="hw-posmq-heading">
+      <div class="container">
+        <div class="hw-posmq-band reveal">
+          <div class="hw-posmq-band-glow" aria-hidden="true"></div>
+          <div class="hw-posmq-band-content">
+            <div>
+              <div class="section-label"><span class="label">Software Layer</span></div>
+              <h2 class="display-md mb-sm" id="hw-posmq-heading">The control layer: POSMq</h2>
+              <p class="body-md text-muted" style="max-width:420px">Hardware alone isn't enough. POSMq connects
+                instruments, models, and experimental decisions into a single lab-control platform.</p>
+            </div>
+            <a href="posmq.html" class="btn btn-primary">Explore POSMq<svg class="btn-arrow" width="16" height="16"
+                viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="sponsor-cta" style="padding-block:var(--space-xl)" aria-labelledby="hw-cta-heading">
+      <div class="container">
+        <div class="reveal" style="max-width:540px;margin-inline:auto">
+          <h2 class="display-md mb-md" id="hw-cta-heading">Questions?</h2>
+          <p class="body-lg text-muted mb-lg">Reach out to discuss hardware collaboration, instrumentation needs, or
+            partnership.</p>
+          <a href="../contact.html" class="btn btn-primary">Contact POSM</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="../index.html" class="nav-logo" style="display:inline-flex">
+            <div class="nav-logo-mark" aria-hidden="true">P</div>POSM
+          </a>
+          <p>Student-led quantum optics and AMO hardware research · University of Minnesota · Advised by Prof. Alexander
+            McLeod.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Group</h4><a href="../team.html">Team</a><a href="../research.html">Research</a><a
+            href="hardware.html">Hardware</a><a href="posmq.html">POSMq</a><a href="../contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>News</h4><a href="../news-updates.html">Project Updates</a><a
+            href="../news-publications.html">Publications</a>
+        </div>
+        <div class="footer-col">
+          <h4>Sponsors</h4><a href="../sponsors-current.html">Current Sponsors</a><a href="../sponsors-join.html">Become
+            a Sponsor</a>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© 2025–2026 POSM Research Group · University of Minnesota</span><span>Advised by
+          Prof. Alexander McLeod</span></div>
+    </div>
+  </footer>
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
